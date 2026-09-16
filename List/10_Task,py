@@ -1,0 +1,22 @@
+# Input :
+# Write a Python program to scramble the letters of string in a given list. 
+# Original list:
+# ['Python', 'list', 'exercises', 'practice', 'solution']
+
+# Expected Output :
+# After scrambling the letters of the strings of the said list:
+# ['tnPhyo', 'tlis', 'ecrsseiex', 'ccpitear', 'noiltuos']
+import random
+
+list1 = ['Python', 'list', 'exercises', 'practice', 'solution']
+
+list_scramble = []
+
+for i in list1:
+    j = list(i)
+    random.shuffle(j)
+    k = ''.join(j)
+    list_scramble.append(k)
+
+print("Original list:",list1)
+print("Scrambled list:",list_scramble)
